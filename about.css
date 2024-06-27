@@ -1,0 +1,84 @@
+
+*{
+    box-sizing: border-box;
+    margin: 5px;
+    padding: 0;
+    background-color: black;
+    font-family: "Helvetica Neue", serif;
+}
+
+.logo{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0 2rem;
+}
+
+nav{
+    height: 50px;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: calc((100vw - 1300px)/2);
+    padding-bottom: 0;
+}
+
+
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 0 1.5rem;
+}
+
+nav a:hover{
+    color: darkred;
+}
+
+.ansh{
+    background: black;
+    color: white;
+
+}
+
+.ansh-container{
+    display: grid;
+    height: 50vh;
+    padding: calc((100vw - 1300px));
+    grid-template-columns: 1fr 150px;
+}
+
+
+.column-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+    padding: 0rem 2rem;
+}
+
+.column-left h1{
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.column-left p{
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.column-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: end;
+    color: white;
+    padding: 4rem 10rem;
+    grid-column: 2; grid-row: 3;
+}
